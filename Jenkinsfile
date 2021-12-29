@@ -9,7 +9,8 @@ pipeline{
                 currentBuild.displayName ="#pipe-${BUILD_NUMBER}"
             }
         }
-    }      
+    } 
+        
       /*
         stage('git') {
             steps {
