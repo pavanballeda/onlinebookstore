@@ -1,7 +1,11 @@
 pipeline{
+    
+    triggers {
+        githubPush()
+    }    
     agent any
     stages {
-    
+
     stage('build_number') {
         steps {
             buildName '#pipe-${BULID_NUMBER}'
