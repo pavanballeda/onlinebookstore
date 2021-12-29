@@ -18,7 +18,6 @@ pipeline{
                 echo 'succesfully cloned git'
             }
         }*/
-        
         stage('build code') {
             steps {
            bat 'mvn clean install'
